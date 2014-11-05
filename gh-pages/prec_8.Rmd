@@ -1,0 +1,5 @@
+---
+title: "World Precipitation: August"
+---
+
+![World Precipitation: August](images/prec_8.png)

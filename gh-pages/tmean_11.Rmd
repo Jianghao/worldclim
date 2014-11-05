@@ -1,0 +1,5 @@
+---
+title: "World mean temperature: November"
+---
+
+![World mean temperature: November](images/tmean_11.png)

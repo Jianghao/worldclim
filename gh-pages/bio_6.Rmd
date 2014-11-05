@@ -1,0 +1,5 @@
+---
+title: "Min Temperature of Coldest Month"
+---
+
+![](images/bio_6.png)

@@ -1,0 +1,79 @@
+---
+title: "World monthly Precipitation"
+---
+
+-------------------
+
+
+### January
+
+![January](images/prec_1.png)
+
+---------------
+
+
+### February
+
+![February](images/prec_2.png)
+
+---------------
+
+### March
+
+![March](images/prec_3.png)
+
+---------------
+
+### April
+
+![April](images/prec_4.png)
+
+---------------
+
+### May
+
+![May](images/prec_5.png)
+
+---------------
+
+### June
+
+![June](images/prec_6.png)
+
+---------------
+
+### July
+
+![July](images/prec_7.png)
+
+---------------
+
+### August
+
+![August](images/prec_8.png)
+
+---------------
+
+### Sepetember
+
+![Sepetember](images/prec_9.png)
+
+---------------
+
+### October
+
+![October](images/prec_10.png)
+
+---------------
+
+### November
+
+![November](images/prec_11.png)
+
+---------------
+
+### December
+
+![December](images/prec_12.png)
+
+---------------

@@ -1,0 +1,5 @@
+---
+title: "World maximum temperature: July"
+---
+
+![World maximum temperature: July](images/tmax_7.png)

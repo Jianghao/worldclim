@@ -1,0 +1,5 @@
+---
+title: "Mean Temperature of Warmest Quarter"
+---
+
+![](images/bio_10.png)

@@ -1,0 +1,5 @@
+---
+title: "World mean temperature: December"
+---
+
+![World mean temperature: December](images/tmean_12.png)

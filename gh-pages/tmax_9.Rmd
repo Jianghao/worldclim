@@ -1,0 +1,5 @@
+---
+title: "World maximum temperature: September"
+---
+
+![World maximum temperature: September](images/tmax_9.png)

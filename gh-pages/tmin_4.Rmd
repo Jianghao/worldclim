@@ -1,0 +1,5 @@
+---
+title: "World minimum temperature: April"
+---
+
+![World minimum temperature: April](images/tmin_4.png)

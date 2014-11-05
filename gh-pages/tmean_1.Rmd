@@ -1,0 +1,5 @@
+---
+title: "World mean temperature: January"
+---
+
+![World mean temperature: January](images/tmean_1.png)

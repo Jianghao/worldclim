@@ -1,0 +1,5 @@
+---
+title: "World minimum temperature: December"
+---
+
+![World minimum temperature: December](images/tmin_12.png)

@@ -1,0 +1,5 @@
+---
+title: "World minimum temperature: October"
+---
+
+![World minimum temperature: October](images/tmin_10.png)

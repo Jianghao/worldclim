@@ -1,0 +1,5 @@
+---
+title: "World maximum temperature: April"
+---
+
+![World maximum temperature: April](images/tmax_4.png)

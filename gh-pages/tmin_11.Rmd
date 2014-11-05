@@ -1,0 +1,5 @@
+---
+title: "World minimum temperature: November"
+---
+
+![World minimum temperature: November](images/tmin_11.png)

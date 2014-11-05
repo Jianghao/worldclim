@@ -1,0 +1,5 @@
+---
+title: "World maximum temperature: October"
+---
+
+![World maximum temperature: October](images/tmax_10.png)

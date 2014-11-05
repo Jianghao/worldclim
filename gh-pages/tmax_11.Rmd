@@ -1,0 +1,5 @@
+---
+title: "World maximum temperature: November"
+---
+
+![World maximum temperature: November](images/tmax_11.png)

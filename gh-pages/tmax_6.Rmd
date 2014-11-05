@@ -1,0 +1,5 @@
+---
+title: "World maximum temperature: June"
+---
+
+![World maximum temperature: June](images/tmax_6.png)

@@ -1,0 +1,5 @@
+---
+title: "World Precipitation: November"
+---
+
+![World Precipitation: November](images/prec_11.png)

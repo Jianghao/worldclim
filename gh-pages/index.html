@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+<title>Visualize World Climate Data</title>
+
+<script src="libs/jquery-1.11.0/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="libs/bootstrap-2.3.2/css/spacelab.min.css" rel="stylesheet" />
+<link href="libs/bootstrap-2.3.2/css/bootstrap-responsive.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-2.3.2/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+
+/* padding for bootstrap navbar */
+body {
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+@media (max-width: 979px) {
+  body {
+    padding-top: 0;
+  }
+}
+
+/* offset scroll position for anchor links (for fixed navbar)  */
+@media (min-width: 980px) {
+  .section h2 {
+    padding-top: 52px;
+    margin-top: -52px;
+  }
+  .section h3 {
+    padding-top: 52px;
+    margin-top: -52px;
+  }
+}
+
+
+/* don't use link color in navbar */
+.dropdown-menu>li>a {
+  color: black;
+}
+
+/* some padding for disqus */
+#disqus_thread {
+  margin-top: 45px;
+}
+
+</style>
+
+<link rel="stylesheet" href="libs/font-awesome-4.1.0/css/font-awesome.min.css"/>
+
+<style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet"
+      href="libs/highlight/textmate.css"
+      type="text/css" />
+<script src="libs/highlight/highlight.js"></script>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<div class="container-fluid main-container">
+
+
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="brand" href="index.html">Global Climate Visualization</a>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+		  <li><a href="alt.html">Elevation</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown">Max Temp <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+               <li class="nav-header">Max Temperature</li>
+			   <li><a href="tmax.html">Full year</a></li>
+               <li><a href="tmax_1.html">January</a></li>
+               <li><a href="tmax_2.html">February</a></li>
+               <li><a href="tmax_3.html">March</a></li>
+               <li><a href="tmax_4.html">April</a></li>
+               <li><a href="tmax_5.html">May</a></li>
+               <li><a href="tmax_6.html">June</a></li>
+               <li><a href="tmax_7.html">July</a></li>
+               <li><a href="tmax_8.html">August</a></li>
+               <li><a href="tmax_9.html">September</a></li>
+               <li><a href="tmax_10.html">October</a></li>
+               <li><a href="tmax_11.html">November</a></li>
+               <li><a href="tmax_12.html">December</a></li>
+            </ul>
+          </li>
+		  
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown">Min Temp <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+               <li class="nav-header">Min Temperature</li>
+			   <li><a href="tmin.html">Full year</a></li>
+               <li><a href="tmin_1.html">January</a></li>
+               <li><a href="tmin_2.html">February</a></li>
+               <li><a href="tmin_3.html">March</a></li>
+               <li><a href="tmin_4.html">April</a></li>
+               <li><a href="tmin_5.html">May</a></li>
+               <li><a href="tmin_6.html">June</a></li>
+               <li><a href="tmin_7.html">July</a></li>
+               <li><a href="tmin_8.html">August</a></li>
+               <li><a href="tmin_9.html">September</a></li>
+               <li><a href="tmin_10.html">October</a></li>
+               <li><a href="tmin_11.html">November</a></li>
+               <li><a href="tmin_12.html">December</a></li>
+            </ul>
+          </li>	 
+		  
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown">Mean Temp <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+               <li class="nav-header">Mean Temperature</li>
+			   <li><a href="tmean.html">Full year</a></li>
+               <li><a href="tmean_1.html">January</a></li>
+               <li><a href="tmean_2.html">February</a></li>
+               <li><a href="tmean_3.html">March</a></li>
+               <li><a href="tmean_4.html">April</a></li>
+               <li><a href="tmean_5.html">May</a></li>
+               <li><a href="tmean_6.html">June</a></li>
+               <li><a href="tmean_7.html">July</a></li>
+               <li><a href="tmean_8.html">August</a></li>
+               <li><a href="tmean_9.html">September</a></li>
+               <li><a href="tmean_10.html">October</a></li>
+               <li><a href="tmean_11.html">November</a></li>
+               <li><a href="tmean_12.html">December</a></li>
+            </ul>
+          </li>	 
+
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown">Prec <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+               <li class="nav-header">Precipitation</li>
+			   <li><a href="prec.html">Full year</a></li>
+               <li><a href="prec_1.html">January</a></li>
+               <li><a href="prec_2.html">February</a></li>
+               <li><a href="prec_3.html">March</a></li>
+               <li><a href="prec_4.html">April</a></li>
+               <li><a href="prec_5.html">May</a></li>
+               <li><a href="prec_6.html">June</a></li>
+               <li><a href="prec_7.html">July</a></li>
+               <li><a href="prec_8.html">August</a></li>
+               <li><a href="prec_9.html">September</a></li>
+               <li><a href="prec_10.html">October</a></li>
+               <li><a href="prec_11.html">November</a></li>
+               <li><a href="prec_12.html">December</a></li>
+            </ul>
+          </li>	 
+
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown">Bioclimatic <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+               <li class="nav-header">Temperature</li>
+			   <li><a href="bio_1.html">Annual Mean Temperature </a></li>
+			   <li><a href="bio_2.html">Mean Diurnal Range </a></li>
+			   <li><a href="bio_3.html">Isothermality  </a></li>
+			   <li><a href="bio_4.html">Temperature Seasonality </a></li>
+			   <li><a href="bio_5.html">Max Temperature of Warmest Month </a></li>
+			   <li><a href="bio_6.html">Min Temperature of Coldest Month </a></li>
+			   <li><a href="bio_7.html">Temperature Annual Range </a></li>
+			   <li><a href="bio_8.html">Mean Temperature of Wettest Quarter </a></li>
+			   <li><a href="bio_9.html">Mean Temperature of Driest Quarter </a></li>
+			   <li><a href="bio_10.html">Mean Temperature of Warmest Quarter </a></li>
+			   <li><a href="bio_11.html">Mean Temperature of Coldest Quarter </a></li>
+			   <li><a href="bio_12.html">Annual Precipitation </a></li>
+			   <li><a href="bio_13.html">Precipitation of Wettest Month </a></li>
+			   <li><a href="bio_14.html">Precipitation of Driest Month </a></li>
+			   <li><a href="bio_15.html">Precipitation Seasonality </a></li>
+			   <li><a href="bio_16.html">Precipitation of Wettest Quarter </a></li>
+			   <li><a href="bio_17.html">Precipitation of Driest Quarter </a></li>
+			   <li><a href="bio_18.html">Precipitation of Warmest Quarter </a></li>
+			   <li><a href="bio_19.html">Precipitation of Coldest Quarter </a></li>
+            </ul>
+          </li>	 
+        </ul>
+		
+        <ul class="nav pull-right">
+          <a class="btn btn-primary" href="https://github.com/jianghao/worldclim">
+            <i class="fa fa-github fa-lg"></i>
+            GitHub
+          </a>
+        </ul>
+		
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+</div>
+
+<div id="header">
+<h1 class="title">Visualize World Climate Data</h1>
+</div>
+
+
+<hr />
+<p><img src="images/bio_1.png" alt="Annual Mean Temperature" /></p>
+<div id="altitude-elevation-above-sea-level-m-from-srtm" class="section level4">
+<h4><a href="alt.html">Altitude (elevation above sea level) (m) (from SRTM)</a></h4>
+</div>
+<div id="world-monthly-minimum-temperature" class="section level4">
+<h4><a href="tmin.html">World monthly minimum temperature</a></h4>
+</div>
+<div id="world-monthly-maximum-temperature" class="section level4">
+<h4><a href="tmax.html">World monthly maximum temperature</a></h4>
+</div>
+<div id="world-monthly-mean-temperature" class="section level4">
+<h4><a href="tmean.html">World monthly mean temperature</a></h4>
+</div>
+<div id="world-monthly-precipitation" class="section level4">
+<h4><a href="tmean.html">World monthly precipitation</a></h4>
+</div>
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p><a href="www.worldclim.org">WorldClim</a> is a set of global climate layers (climate grids) with a spatial resolution of about 1 square kilometer. The data can be used for mapping and spatial modeling in a GIS or with other computer programs.</p>
+<p>Here, we want to visualize the WorldClim data to give research a direct reference.</p>
+<p>Information about the methods used to generate the climate layers, and the units and formats of the data. You can find more info in the preferred citation: &gt; Hijmans, R.J., S.E. Cameron, J.L. Parra, P.G. Jones and A. Jarvis, 2005. Very high resolution interpolated climate surfaces for global land areas. International Journal of Climatology 25: 1965-1978.</p>
+</div>
+<div id="data-prepare" class="section level2">
+<h2>Data prepare</h2>
+<div id="data-download" class="section level3">
+<h3>Data download</h3>
+<p>Data for current conditions (~1950-2000) was downloaded from <a href="http://worldclim.org/current"><a href="http://worldclim.org/current">http://worldclim.org/current</a></a>. WorldClim has four types of spatial resoluation data for download. Here, we visualized the 2.5 arc-minutes resolution.</p>
+<p><strong>Four spatial resulations:</strong></p>
+<ul>
+<li>30 arc-seconds (~1 km)</li>
+<li>2.5 arc-minutes</li>
+<li>5 arc-minutes</li>
+<li>10 arc-minutes</li>
+</ul>
+<p><strong>Available variables:</strong></p>
+<ul>
+<li>Min. Temperature: average monthly minimum temperature (掳C * 10)</li>
+<li>Max. Temperature: average monthly maximum temperature (掳C * 10)</li>
+<li>Mean Temperature: average monthly mean temperature (掳C * 10)</li>
+<li>Precipitation: average monthly precipitation (mm)</li>
+<li>Bioclim: bioclimatic variables derived from the tmean, tmin, tmax and prec</li>
+<li>BIO1 = Annual Mean Temperature</li>
+<li>BIO2 = Mean Diurnal Range (Mean of monthly (max temp - min temp))</li>
+<li>BIO3 = Isothermality (BIO2/BIO7) (* 100)</li>
+<li>BIO4 = Temperature Seasonality (standard deviation *100)</li>
+<li>BIO5 = Max Temperature of Warmest Month</li>
+<li>BIO6 = Min Temperature of Coldest Month</li>
+<li>BIO7 = Temperature Annual Range (BIO5-BIO6)</li>
+<li>BIO8 = Mean Temperature of Wettest Quarter</li>
+<li>BIO9 = Mean Temperature of Driest Quarter</li>
+<li>BIO10 = Mean Temperature of Warmest Quarter</li>
+<li>BIO11 = Mean Temperature of Coldest Quarter</li>
+<li>BIO12 = Annual Precipitation</li>
+<li>BIO13 = Precipitation of Wettest Month</li>
+<li>BIO14 = Precipitation of Driest Month</li>
+<li>BIO15 = Precipitation Seasonality (Coefficient of Variation)</li>
+<li>BIO16 = Precipitation of Wettest Quarter</li>
+<li>BIO17 = Precipitation of Driest Quarter</li>
+<li>BIO18 = Precipitation of Warmest Quarter</li>
+<li>BIO19 = Precipitation of Coldest Quarter</li>
+<li>Altitude: altitude (elevation above sea level) (m) (from SRTM)</li>
+</ul>
+</div>
+<div id="esri-grids-to-geotiff" class="section level3">
+<h3>Esri Grids to GeoTiff</h3>
+<p>We convert the orginal ESRI grids format to GeoTiff format with <a href="http://www.gdal.org/gdal_translate.html"><code>gdal_translate</code></a> tools.</p>
+</div>
+</div>
+<div id="visualiztion" class="section level2">
+<h2>Visualiztion</h2>
+<p>We visualize these data with the help of R package named <a href="https://github.com/oscarperpinan/rastervis"><code>rasterVis</code></a>.</p>
+<script src="https://gist.github.com/Jianghao/7f1fbc9b58586867fa22.js"></script>
+
+
+
+
+
+
+
+</div>
+
+
+<!-- some extra javascript for older browsers -->
+<script type="text/javascript" src="libs/polyfill.js"></script>
+
+<script>
+
+// manage active state of menu based on current page
+$(document).ready(function () {
+
+    // active menu
+    href = window.location.pathname
+    href = href.substr(href.lastIndexOf('/') + 1)
+    $('a[href="' + href + '"]').parent().addClass('active');
+
+    // manage active menu header
+    if (href.startsWith('authoring_'))
+      $('a[href="' + 'authoring' + '"]').parent().addClass('active');
+    else if (href.endsWith('_format.html'))
+      $('a[href="' + 'formats' + '"]').parent().addClass('active');
+    else if (href.startsWith('developer_'))
+      $('a[href="' + 'developer' + '"]').parent().addClass('active');
+
+});
+
+</script>
+
+<!-- disqus -->
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'worldclimvis'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+    
+        <div id="copyrights">
+             <section class="copyright">All content copyright <a href="about.html">Jianghao Wang</a> &copy; 2014 &bull; All rights reserved.</section>
+        </div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+---
+title: "World mean temperature: August"
+---
+
+![World mean temperature: August](images/tmean_8.png)

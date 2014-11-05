@@ -1,0 +1,5 @@
+---
+title: "World minimum temperature: August"
+---
+
+![World minimum temperature: August](images/tmin_8.png)

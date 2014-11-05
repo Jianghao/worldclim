@@ -1,0 +1,5 @@
+---
+title: "World minimum temperature: September"
+---
+
+![World minimum temperature: September](images/tmin_9.png)

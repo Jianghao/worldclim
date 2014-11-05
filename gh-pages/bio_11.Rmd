@@ -1,0 +1,5 @@
+---
+title: "Mean Temperature of Coldest Quarter"
+---
+
+![](images/bio_11.png)

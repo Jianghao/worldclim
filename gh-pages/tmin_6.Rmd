@@ -1,0 +1,5 @@
+---
+title: "World minimum temperature: June"
+---
+
+![World minimum temperature: June](images/tmin_6.png)

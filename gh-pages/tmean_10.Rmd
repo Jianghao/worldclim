@@ -1,0 +1,5 @@
+---
+title: "World mean temperature: October"
+---
+
+![World mean temperature: October](images/tmean_10.png)
