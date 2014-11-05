@@ -1,0 +1,5 @@
+---
+title: "Max Temperature of Warmest Month"
+---
+
+![](images/bio_5.png)

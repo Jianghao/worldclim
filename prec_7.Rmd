@@ -1,0 +1,5 @@
+---
+title: "World Precipitation: July"
+---
+
+![World Precipitation: July](images/prec_7.png)

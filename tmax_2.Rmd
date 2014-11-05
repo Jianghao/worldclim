@@ -1,0 +1,5 @@
+---
+title: "World maximum temperature: February"
+---
+
+![World maximum temperature: February](images/tmax_2.png)

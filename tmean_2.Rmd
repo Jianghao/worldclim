@@ -1,0 +1,5 @@
+---
+title: "World mean temperature: February"
+---
+
+![World mean temperature: February](images/tmean_2.png)

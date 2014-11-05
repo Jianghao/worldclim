@@ -1,0 +1,5 @@
+---
+title: "Temperature Seasonality (standard deviation *100)"
+---
+
+![](images/bio_4.png)

@@ -1,0 +1,5 @@
+---
+title: "World Precipitation: October"
+---
+
+![World Precipitation: October](images/prec_10.png)

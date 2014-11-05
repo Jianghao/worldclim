@@ -1,0 +1,5 @@
+---
+title: "World mean temperature: July"
+---
+
+![World mean temperature: July](images/tmean_7.png)

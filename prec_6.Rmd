@@ -1,0 +1,5 @@
+---
+title: "World Precipitation: June"
+---
+
+![World Precipitation: June](images/prec_6.png)

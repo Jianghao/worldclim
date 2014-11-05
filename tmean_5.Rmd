@@ -1,0 +1,5 @@
+---
+title: "World mean temperature: May"
+---
+
+![World mean temperature: May](images/tmean_5.png)

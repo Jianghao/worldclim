@@ -1,0 +1,5 @@
+---
+title: "World minimum temperature: January"
+---
+
+![World minimum temperature: January](images/tmin_1.png)

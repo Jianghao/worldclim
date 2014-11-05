@@ -1,0 +1,79 @@
+---
+title: "World monthly mean temperature"
+---
+
+-----------------
+
+
+### January
+
+![January](images/tmean_1.png)
+
+---------------
+
+
+### February
+
+![February](images/tmean_2.png)
+
+---------------
+
+### March
+
+![March](images/tmean_3.png)
+
+---------------
+
+### April
+
+![April](images/tmean_4.png)
+
+---------------
+
+### May
+
+![May](images/tmean_5.png)
+
+---------------
+
+### June
+
+![June](images/tmean_6.png)
+
+---------------
+
+### July
+
+![July](images/tmean_7.png)
+
+---------------
+
+### August
+
+![August](images/tmean_8.png)
+
+---------------
+
+### Sepetember
+
+![Sepetember](images/tmean_9.png)
+
+---------------
+
+### October
+
+![October](images/tmean_10.png)
+
+---------------
+
+### November
+
+![November](images/tmean_11.png)
+
+---------------
+
+### December
+
+![December](images/tmean_12.png)
+
+---------------

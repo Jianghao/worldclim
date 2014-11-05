@@ -1,0 +1,5 @@
+---
+title: "World mean temperature: June"
+---
+
+![World mean temperature: June](images/tmean_6.png)

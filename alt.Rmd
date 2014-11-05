@@ -1,0 +1,5 @@
+---
+title: "Digital Elevation Model"
+---
+
+![Altitude (elevation above sea level) (m) (from SRTM)](images/alt.png)

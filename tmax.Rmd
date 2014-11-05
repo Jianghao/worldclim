@@ -1,0 +1,78 @@
+---
+title: "World monthly maximum temperature"
+---
+
+-----------------
+
+### January
+
+![January](images/tmax_1.png)
+
+---------------
+
+
+### February
+
+![February](images/tmax_2.png)
+
+---------------
+
+### March
+
+![March](images/tmax_3.png)
+
+---------------
+
+### April
+
+![April](images/tmax_4.png)
+
+---------------
+
+### May
+
+![May](images/tmax_5.png)
+
+---------------
+
+### June
+
+![June](images/tmax_6.png)
+
+---------------
+
+### July
+
+![July](images/tmax_7.png)
+
+---------------
+
+### August
+
+![August](images/tmax_8.png)
+
+---------------
+
+### Sepetember
+
+![Sepetember](images/tmax_9.png)
+
+---------------
+
+### October
+
+![October](images/tmax_10.png)
+
+---------------
+
+### November
+
+![November](images/tmax_11.png)
+
+---------------
+
+### December
+
+![December](images/tmax_12.png)
+
+---------------

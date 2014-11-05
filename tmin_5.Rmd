@@ -1,0 +1,5 @@
+---
+title: "World minimum temperature: May"
+---
+
+![World minimum temperature: May](images/tmin_5.png)

@@ -1,0 +1,5 @@
+---
+title: "World minimum temperature: July"
+---
+
+![World minimum temperature: July](images/tmin_7.png)

@@ -1,0 +1,5 @@
+---
+title: "World mean temperature: April"
+---
+
+![World mean temperature: April](images/tmean_4.png)

@@ -1,0 +1,5 @@
+---
+title: "Mean Diurnal Range (Mean of monthly (max temp - min temp))"
+---
+
+![](images/bio_3.png)

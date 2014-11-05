@@ -1,0 +1,5 @@
+---
+title: "World mean temperature: September"
+---
+
+![World mean temperature: September](images/tmean_9.png)

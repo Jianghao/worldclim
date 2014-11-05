@@ -1,0 +1,5 @@
+---
+title: "Temperature Annual Range (BIO5-BIO6)"
+---
+
+![](images/bio_7.png)
